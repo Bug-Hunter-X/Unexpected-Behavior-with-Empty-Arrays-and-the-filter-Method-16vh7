@@ -1,0 +1,3 @@
+# Unexpected Behavior with Empty Arrays and the filter Method in Swift
+
+This repository demonstrates a potential issue when using the `filter` method on empty arrays in Swift.  The `filter` method itself doesn't throw an error when applied to an empty array, instead it silently returns an empty array. This might lead to unexpected behavior or logic errors, especially in scenarios where the input array's emptiness wasn't initially considered. The solution provided addresses this by explicitly checking for an empty input array before proceeding with the filter operation.  The example uses even number filtering for illustrative purposes, but this can apply to any filtering scenario.
